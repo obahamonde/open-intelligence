@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "openai-aws"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+name = "openai"
+version = "0.0.1"
+description = "OpenAI in a Box"
+authors = ["Oscar Bahamonde <oscar.bahamonde.dev@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
