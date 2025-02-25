@@ -24,7 +24,6 @@ services:
     volumes:
       - chat:/app/backend/data
     depends_on:
-      - ollama
       - api
     ports:
       - ${OPEN_WEBUI_PORT-3000}:8080
@@ -56,5 +55,4 @@ networks:
     driver: bridge
 
 volumes:
-  ollama: {}
   chat: {}
