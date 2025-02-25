@@ -1,3 +1,3 @@
-from .generations import app as generations_app
+from .handler import app
 
-__all__ = ["generations_app"]
+__all__ = ['app']

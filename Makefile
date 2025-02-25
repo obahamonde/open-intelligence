@@ -2,7 +2,7 @@
 SERVICE_NAME := openai-in-a-box
 DOCKER_COMPOSE := docker compose
 DOCKER_BUILD := docker build --no-cache
-PORT := 5000
+PORT := 8080
 HOST := 0.0.0.0
 VENV := .venv
 PYTHON := $(VENV)/bin/python
@@ -88,8 +88,6 @@ deps: ## Update dependencies
 .PHONY: count
 count:
 	python ./scripts/count_codelines.py
-
-
 
 .PHONY: install
 install: venv

@@ -1,4 +1,4 @@
-from .speech import app as speech_app
+from .speech.api import speech_app
 from .transcriptions import app as transcriptions_app
 from .translations import app as translations_app
 

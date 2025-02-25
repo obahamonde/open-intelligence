@@ -13,15 +13,6 @@ services:
     networks:
       - default
 
-  ollama:
-    volumes:
-      - ollama:/root/.ollama
-    container_name: ollama
-    pull_policy: always
-    tty: true
-    restart: unless-stopped
-    image: ollama/ollama:${OLLAMA_DOCKER_TAG-latest}
-
   chat:
     build:
       context: ./chat
@@ -63,7 +54,6 @@ services:
 networks:
   default:
     driver: bridge
-
 
 volumes:
   ollama: {}
